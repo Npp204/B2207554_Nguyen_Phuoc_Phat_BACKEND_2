@@ -139,9 +139,9 @@ exports.findAllFavorite = async (req, res, next) => {
 exports.deleteAll = async (req, res, next) => {
     try {
         const contactService = new ContactService(MongoDB.client);
-        const document = await contactService.findFavorite();
+        const document = await contactService.deleteAll();
         return res.send({
-            message: `${deleteCount} contacts were deleted successfully`,
+            message: `${document} contacts were deleted successfully`,
         });
     } catch(error) {
         return next(
