@@ -19,17 +19,17 @@ const ApiError = require("../api-error");
 //     res.send({ message: "update handler"});
 // }; 
 
-exports.delete = (req,res) => {
-    res.send({ message: "delete handler"});
-}; 
+// exports.delete = (req,res) => {
+//     res.send({ message: "delete handler"});
+// }; 
 
-exports.deleteAll = (req,res) => {
-    res.send({ message: "deleteAll handler"});
-}; 
+// exports.deleteAll = (req,res) => {
+//     res.send({ message: "deleteAll handler"});
+// }; 
 
-exports.findAllFavorite = (req,res) => {
-    res.send({ message: "findAllFavorite handler"});
-}; 
+// exports.findAllFavorite = (req,res) => {
+//     res.send({ message: "findAllFavorite handler"});
+// }; 
 
 //Create and Save a new Contact
 exports.create = async (req, res, next) => {
